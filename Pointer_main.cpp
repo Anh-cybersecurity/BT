@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Câu a
+//CÃ¢u a
 int strlen(const char* a) {
     int length = 0;
     while (a[length] != '\0') {
@@ -21,7 +21,7 @@ void reverse(char* a) {
     }
 }
 
-//Câu b
+//CÃ¢u b
 void delete_char(char* a, char c) {
     int n = strlen(a);
     int j = 0;
@@ -33,7 +33,7 @@ void delete_char(char* a, char c) {
     a[j] = '\0';
 }
 
-//Câu c
+//CÃ¢u c
 void pad_right(char* a, int n) {
     int len = strlen(a);
     if (len >= n) return;
@@ -43,7 +43,7 @@ void pad_right(char* a, int n) {
     a[n] = '\0';
 }
 
-//Câu d
+//CÃ¢u d
 void pad_left(char* a, int n) {
     int len = strlen(a);
     if (len >= n) return;
@@ -56,14 +56,14 @@ void pad_left(char* a, int n) {
     a[n] = '\0';
 }
 
-//Câu e
+//CÃ¢u e
 void truncate(char* a, int n) {
     if (strlen(a) > n) {
         a[n] = '\0';
     }
 }
 
-//Câu f
+//CÃ¢u f
 bool is_palindrome(const char* a) {
     int n = strlen(a);
     for (int i = 0; i < n / 2; i++) {
@@ -74,7 +74,7 @@ bool is_palindrome(const char* a) {
     return true;
 }
 
-//Câu g
+//CÃ¢u g
 void trim_left(char* a) {
     int n = strlen(a);
     int i = 0;
@@ -87,7 +87,7 @@ void trim_left(char* a) {
     a[n - i] = '\0';
 }
 
-//Câu h
+//CÃ¢u h
 void trim_right(char* a) {
     int n = strlen(a);
     while (n > 0 && a[n - 1] == ' ') {
@@ -97,34 +97,34 @@ void trim_right(char* a) {
 }
 
 int main() {
-    char str1[] = "hello world!";
+    char str1[] = "Tuananh";
     reverse(str1);
     cout << "Reversed: " << str1 << endl;
 
-    char str2[] = "hello world!";
-    delete_char(str2, 'l');
-    cout << "Deleted 'l': " << str2 << endl;
+    char str2[] = "Tuananh";
+    delete_char(str2, 'T');
+    cout << "Deleted 'T': " << str2 << endl;
 
-    char str3[] = "hello";
+    char str3[] = "Tuananh";
     pad_right(str3, 10);
     cout << "Padded right: '" << str3 << "'" << endl;
 
-    char str4[] = "hello";
+    char str4[] = "Tuananh";
     pad_left(str4, 10);
     cout << "Padded left: '" << str4 << "'" << endl;
 
-    char str5[] = "hello world";
+    char str5[] = "Tuananh";
     truncate(str5, 5);
     cout << "Truncated: " << str5 << endl;
 
-    char str6[] = "madam";
+    char str6[] = "racecar";
     cout << "Is palindrome: " << (is_palindrome(str6) ? "true" : "false") << endl;
 
-    char str7[] = "   hello";
+    char str7[] = "   Tuananh";
     trim_left(str7);
     cout << "Trimmed left: '" << str7 << "'" << endl;
 
-    char str8[] = "hello   ";
+    char str8[] = "Tuananh   ";
     trim_right(str8);
     cout << "Trimmed right: '" << str8 << "'" << endl;
 
